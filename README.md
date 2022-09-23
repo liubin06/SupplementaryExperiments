@@ -28,7 +28,7 @@ $\mathbf{i} \leftarrow \mathbf{i} + \alpha \times [1-\sigma(\hat{x}_{ui})]\times
 
 $\mathbf{u} \leftarrow \mathbf{u} + \alpha \times \sigma(\hat{x}_{uj})\times (-\mathbf{j})$, and 
 
-$\mathbf{j} \leftarrow \mathbf{j} + \alpha \times \sigma(\hat{x}_{ui}) \times (-\mathbf{u})$.
+$\mathbf{j} \leftarrow \mathbf{j} + \alpha \times \sigma(\hat{x}_{uj}) \times (-\mathbf{u})$.
 
 ### InfoNCE loss with one negative 
 Draw (u,i,j), updating $\mathbf{u}$, $\mathbf{i}$ and $\mathbf{j}$ by performing: 
