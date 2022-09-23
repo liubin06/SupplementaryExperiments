@@ -1,8 +1,8 @@
 # Supplementary experiments for BNS with different loss functions.
 
 ## Loss Functions
-- BCE  : Implement BNS for binary corss-entropy loss (run [MF_BCE.py](https://github.com/liubin06/BNS/blob/main/BNS_MF/main_MF.py) ); 
-- InfoNCE: Implement BNS for InfoNCE loss(run [MF_InfoNCE.py](https://github.com/liubin06/BNS/blob/main/BNS_lightGCN/main_lightGCN.py) ).
+- BCE  : Implement BNS for binary corss-entropy loss (run [MF_BCE.py](https://github.com/liubin06/SupplementaryExperiments/blob/main/MF_BCE.py) ); 
+- InfoNCE: Implement BNS for InfoNCE loss(run [MF_InfoNCE.py](https://github.com/liubin06/SupplementaryExperiments/blob/main/MF_InfoNCE.py ) ).
 
 ## Why BNS is applicable contrastive-based loss functions?
 
@@ -36,3 +36,6 @@ $\mathbf{j} \leftarrow \mathbf{j} + \alpha \times (1-P) \times (-\mathbf{u})$ , 
 $P = \frac{e^{\hat{x}_{ui}}}{e^{\hat{x}_{ui}} + e^{\hat{x}_{uj}}}$
 
 ## Experimental results
+<div align=center>
+<img src="https://github.com/liubin06/SupplementaryExperiments/blob/main/Results.png">
+</div>
