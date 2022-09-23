@@ -1,8 +1,8 @@
 # Supplementary experiments for BNS with different loss functions.
 
-MF with BNS  and lightGCN with BNS shows that,  BNS is applicable to **different encoders**. 
+By fixing the loss function as BPR loss, MF with BNS  and lightGCN with BNS have shown that  BNS is applicable to **Different Encoders**. 
 
-This supplementary experiments will show that BNS is applicable to **different loss functions**.
+By fixing the encoder as MF, this supplementary experiments will show that BNS is applicable to **Different Loss Functions**.
 
 ## Loss Functions
 - BCE  : Implement BNS for binary corss-entropy loss (run [MF_BCE.py](https://github.com/liubin06/SupplementaryExperiments/blob/main/MF_BCE.py) ); 
