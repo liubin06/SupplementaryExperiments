@@ -1,8 +1,8 @@
 # Supplementary experiments for BNS with different loss functions.
 
-By fixing the loss function as BPR loss, MF with BNS  and lightGCN with BNS have shown that  BNS is applicable to **Different Encoders**. 
+- By fixing the loss function as BPR loss, MF with BNS  and lightGCN with BNS have shown that  BNS is applicable to **Different Encoders**. 
 
-By fixing the encoder as MF, this supplementary experiments will show that BNS is applicable to **Different Loss Functions**.
+- By fixing the encoder as MF, this supplementary experiments will show that BNS is applicable to **Different Loss Functions**.
 
 ## Loss Functions
 - BCE  : Implement BNS for binary corss-entropy loss (run [MF_BCE.py](https://github.com/liubin06/SupplementaryExperiments/blob/main/MF_BCE.py) ); 
@@ -16,13 +16,15 @@ BNS derived from the order relation, leading it applicable to other contrastive 
 
 ## Gradient descent for different loss functions
 ### BCE loss
-Draw positive instance (u,i) or negative instance (u,j). If $x \in pos$, updating $\mathbf{u}$ and $\mathbf{i}$ by performing: 
+Draw positive instance (u,i) or negative instance (u,j). 
+
+- If $x \in pos$, updating $\mathbf{u}$ and $\mathbf{i}$ by performing: 
 
 $\mathbf{u} \leftarrow \mathbf{u} + \alpha \times [1-\sigma(\hat{x}_{ui})]\times \mathbf{i}$, and 
 
 $\mathbf{i} \leftarrow \mathbf{i} + \alpha \times [1-\sigma(\hat{x}_{ui})]\times \mathbf{u}$.
 
-If $x \in neg$, updating $\mathbf{u}$ and $\mathbf{j}$ by performing: 
+- If $x \in neg$, updating $\mathbf{u}$ and $\mathbf{j}$ by performing: 
 
 $\mathbf{u} \leftarrow \mathbf{u} + \alpha \times \sigma(\hat{x}_{uj})\times (-\mathbf{j})$, and 
 
