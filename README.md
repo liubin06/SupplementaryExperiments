@@ -1,8 +1,12 @@
 # Supplementary experiments for BNS with different loss functions.
 
-- By fixing the loss function as BPR loss, MF with BNS  and lightGCN with BNS have shown that  BNS is applicable to **Different Encoders**. 
+- By fixing the loss function as BPR loss, MF  and lightGCN have shown that  BNS is applicable to **Different Encoders**. Implement BNS for Matrix Factorization (MF) (run [main_MF.py](https://github.com/liubin06/BNS/blob/main/BNS_MF/main_MF.py) ); 
+Implement BNS for light Graph Convolution Network (LightGCN) (run [main_lightGCN.py](https://github.com/liubin06/BNS/blob/main/BNS_lightGCN/main_lightGCN.py) ).
 
 - By fixing the encoder as MF, this supplementary experiments will show that BNS is applicable to **Different Loss Functions**.
+
+
+
 
 ## Loss Functions
 - BCE  : Implement BNS for binary corss-entropy loss (run [MF_BCE.py](https://github.com/liubin06/SupplementaryExperiments/blob/main/MF_BCE.py) ); 
