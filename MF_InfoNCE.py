@@ -89,7 +89,7 @@ def sofmax(pos_score,neg_socre):
 
 class BPRMF:
     lr = 0.01
-    reg = 0.001
+    reg = 0.01
     d = 32
 
     miu = 0
